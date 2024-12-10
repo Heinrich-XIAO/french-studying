@@ -1,0 +1,118 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  color: #646cff;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.tool-card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: 1px solid #333;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  border-color: #646cff;
+}
+
+.tool-card h2 {
+  color: #646cff;
+  margin: 0 0 1rem 0;
+}
+
+.tool-card p {
+  color: #888;
+  margin: 0;
+}
+
+.coming-soon {
+  display: inline-block;
+  background: #646cff33;
+  color: #646cff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8em;
+  margin-top: 1rem;
+}
+
+/* Tool-specific styles */
+.back-button {
+  background: #646cff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 1rem 0;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background: #535bf2;
+}
+
+header {
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+main {
+  padding: 2rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  .tool-card {
+    background: #f9f9f9;
+    border-color: #ddd;
+  }
+  .tool-card p {
+    color: #666;
+  }
+  header {
+    border-bottom-color: #ddd;
+  }
+}
